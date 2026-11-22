@@ -1,0 +1,11 @@
+part,quantity,status,notes
+Kailh Choc V1 Sunset,3,ordered,No spare
+MBK Choc V1 black 1U keycaps,10,ordered,3 required
+Seeed XIAO nRF52840,1,ordered,BLE prototype
+2-in-1 key puller,1,ordered,Tool
+GRT65-EXP Kit,1,on_hand,Unassembled
+Protected 1S LiPo,1,unselected,Size and charging constraints unknown
+Power switch,1,unselected,Electrical architecture pending
+Addressable RGB LEDs,3,unselected,Voltage and placement pending
+Custom PCB,1,unselected,After validation
+Custom enclosure,1,unselected,After measured CAD stackup
