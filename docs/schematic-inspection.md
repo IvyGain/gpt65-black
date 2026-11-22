@@ -32,3 +32,21 @@ Inspected directly via GitHub connector on 2026-11-22. This is a **static source
 ## Source links
 - https://github.com/geek-rabb1t/grt65-expkit/blob/master/pcb/grt65_exp_kit.kicad_sch
 - https://github.com/geek-rabb1t/GR-Trackpad65/blob/main/pcb/trackpad.kicad_sch
+
+## KiCad ネットリストによる追検証
+
+**VERIFIED（静的）** 上記の expkit と trackpad のリビジョン ID は実際のコミット ID と一致し、両回路図の Git blob SHA も一致した。KiCad 9.0.2+dfsg-1 で以下を実行し、XML のコネクタ全ピンを PCB のパッドネットと照合した。保存した XML は `design/source` の作業場所の接頭辞のみ除去している。隣接する LICENSE は各上流の MIT ライセンス。
+
+```sh
+git clone https://github.com/geek-rabb1t/grt65-expkit.git exp
+git clone https://github.com/geek-rabb1t/GR-Trackpad65.git pad
+git -C exp checkout --detach b5f1f13de7174624f89a41ebc992bdd7102dd792
+git -C pad checkout --detach 79e68a0a344df3488b5fa36183299b8b5d22439a
+kicad-cli sch export netlist --format kicadxml -o expkit.xml exp/pcb/grt65_exp_kit.kicad_sch
+kicad-cli sch export netlist --format kicadxml -o trackpad.xml pad/pcb/trackpad.kicad_sch
+```
+
+- [expkit XML](netlists/expkit.xml) · [回路図](https://github.com/geek-rabb1t/grt65-expkit/blob/b5f1f13de7174624f89a41ebc992bdd7102dd792/pcb/grt65_exp_kit.kicad_sch) · [PCB](https://github.com/geek-rabb1t/grt65-expkit/blob/b5f1f13de7174624f89a41ebc992bdd7102dd792/pcb/grt65_exp_kit.kicad_pcb)
+- [trackpad XML](netlists/trackpad.xml) · [回路図](https://github.com/geek-rabb1t/GR-Trackpad65/blob/79e68a0a344df3488b5fa36183299b8b5d22439a/pcb/trackpad.kicad_sch) · [PCB](https://github.com/geek-rabb1t/GR-Trackpad65/blob/79e68a0a344df3488b5fa36183299b8b5d22439a/pcb/trackpad.kicad_pcb)
+
+配線案と残る実機確認項目は [ピンマップ](pin-map.md) を参照。

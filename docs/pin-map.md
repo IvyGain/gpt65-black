@@ -1,21 +1,31 @@
-# Pin mapping — evidence-first
+# GRT65-EXP / GR-Trackpad65 ピンマップ
 
-## Verified at the GR-Trackpad65 module FFC
-| Contact | Signal | Source |
+**VERIFIED（静的）** KiCad 9.0.2 の回路図ネットリストと、同じリビジョンの PCB ファイルにあるコネクタのパッドネットが一致した。表の番号はパッド番号。U1 の番号は expkit 回路図シンボルのピン番号。
+
+| expkit J3 | expkit ネット | RP2040-Zero U1 | 同じネット上の端子 | 対応するモジュール信号と J1 番号 |
+|---|---|---|---|---|
+| 1 | `/SDA` | 2 (GP2) | J2.3、R2.2 | SDA、J1.6 |
+| 2 | `/SCL` | 3 (GP3) | J2.4、R1.2 | SCL、J1.5 |
+| 3 | `+3.3V` | 30 (3V3) | J1.3、R1.1、R2.1 | +3V3、J1.4 |
+| 4 | `GND` | 31 (GND) | J1.2、SW1.2、SW2.2、SW3.2 | GND、J1.3 |
+| 5 | `unconnected-(J3-Pin_5-Pad5)` | 接続なし | J3.5 のみ (no-connect) | ホスト側に対応信号なし |
+| 6 | `unconnected-(J3-Pin_6-Pad6)` | 接続なし | J3.6 のみ (no-connect) | ホスト側に対応信号なし |
+
+## XIAO nRF52840 の検証用接続
+
+**INFERRED（ベンチ案）** モジュール J1 をピン番号が確認できる 0.5 mm FFC ブレークアウトから XIAO に直接つなぐ。下表は XIAO nRF52840 標準版用。expkit 経由では RDY を取得できない。
+
+| モジュール J1 | ネット（静的 VERIFIED） | XIAO 側（接続案） |
 |---|---|---|
-| 1 | RDY | GR-Trackpad65 README |
-| 2 | NRST | GR-Trackpad65 README |
-| 3 | GND | GR-Trackpad65 README |
-| 4 | VCC | GR-Trackpad65 README |
-| 5 | SCL | GR-Trackpad65 README |
-| 6 | SDA | GR-Trackpad65 README |
+| 1 | `/RDY` → IQS550 U1.11 | D0 (P0.02)。入力、高インピーダンス |
+| 2 | `/NRST` → U1.10、C6 | 開放。起動時のリセット解除を確認してから通信 |
+| 3 | `GND` | GND。共通グランド |
+| 4 | `+3V3` → U1.7 VDDHI、U1.38 VDDIO | XIAO の 3V3 出力を単一の給電元として使用する候補。電流予算の確認が先 |
+| 5 | `/SCL` → U1.6 | D5 (P0.05)、`Wire` の SCL |
+| 6 | `/SDA` → U1.5 | D4 (P0.04)、`Wire` の SDA |
 
-**DO NOT WIRE DIRECTLY FROM THIS TABLE.** This is the module-side numbering described by the author, not an independently verified view of the opposite end of the FFC or the expkit host connector. The cable contact orientation, host connector pad numbering, VCC voltage, logic thresholds, and XIAO pin mapping must be validated from schematics, connector datasheets and continuity measurements.
+**VERIFIED（静的）** expkit の R1/R2 は各 1 kΩ、モジュールの R1/R2 は各 4.7 kΩ。いずれも SCL/SDA を各基板の 3.3 V ネットにプルアップする。両方を同一バス・同一電源に入れた場合の合成値は約 825 Ω。検証用接続はモジュール側の 4.7 kΩ を前提とし、実装確認前に外付けプルアップを追加しない。
 
-## Pending
-- KiCad expkit connector netlist and RP2040-Zero pin assignment.
-- XIAO nRF52840 SDA/SCL, IRQ/NRST GPIO choices and available pins.
-- Voltage compatibility and pull-ups; ground reference; supply current.
-- Bench wiring table, after verification.
+**UNVERIFIED（通電前の条件）** 実物のコネクタの品番・接点面、FFC の両端の接点面、ブレークアウトの 1 番印を確認し、電源を外した状態で各ピンを導通確認する。上の信号対応から FFC の向きを決めない。VDD と GND の短絡、プルアップ先、RDY の出力形式とアイドル／アクティブ電圧、NRST の解除条件を確認する。XIAO の 3V3 供給余力とモジュールの起動時・動作時電流を確認し、初回は電流制限を設ける。5V/VBUS、バッテリー、RP2040 側の電源は接続しない。実機への通電・書き込み・加工は未実施。
 
-Safety gate: no power-on until VCC/GND and logic levels are established.
+[回路図・PCB の参照リビジョンとネットリストの再生成手順](schematic-inspection.md)

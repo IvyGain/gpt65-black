@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>pad/pcb/trackpad.kicad_sch</source>
+    <date>2026-11-22T11:51:23+0000</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>trackpad.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>673f82dc-9a73-4788-83a2-509b83c10e5a</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06af6ed6-c7dd-4355-b465-936702e22375</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f056ec7-22a0-43ff-b7d2-408a5caf2c15</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8d80307-4f85-48f0-a5dd-e4b661d538de</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf86525a-fb52-431f-b14e-33de76e2f075</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08e25c76-dd15-4a3b-8ae4-86d62dece2e0</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x06</value>
+      <footprint>keyboard:Jushuo_AFC07-S06FCA-00_1x6-1MP_P0.50_Horizontal-JLC</footprint>
+      <datasheet>https://www.lcsc.com/product-detail/FFC-FPC-Connectors_JUSHUO-AFC07-S06FCC-00_C11048.html</datasheet>
+      <fields>
+        <field name="LCSC Part #">  C11048</field>
+        <field name="part url">https://www.lcsc.com/product-detail/FFC-FPC-Connectors_JUSHUO-AFC07-S06FCC-00_C11048.html</field>
+        <field name="Footprint">keyboard:Jushuo_AFC07-S06FCA-00_1x6-1MP_P0.50_Horizontal-JLC</field>
+        <field name="Datasheet">https://www.lcsc.com/product-detail/FFC-FPC-Connectors_JUSHUO-AFC07-S06FCC-00_C11048.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC Part #" value="  C11048"/>
+      <property name="part url" value="https://www.lcsc.com/product-detail/FFC-FPC-Connectors_JUSHUO-AFC07-S06FCC-00_C11048.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f9d9344-8459-4c80-b1ed-ab4b61a5a514</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c5d308f-da63-42cc-9213-3631815763b2</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e349897c-6dda-487f-ad4b-c3778e520ca0</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4129915-0cd8-4754-992e-5a9084bc9291</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>438c0bf6-a19b-4de0-af02-87eb0e4a1913</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51f83a94-2ff9-4634-bb35-b493e743d336</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebc6887f-f827-4dfe-b9e3-cf5f324afb51</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>024933cb-7ac9-4a68-b652-d8594d084a70</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>549ba5cd-2839-4eb6-830b-d7425adb5f5d</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04b7fa99-b790-47e3-89ed-1cd5b1d6bac4</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>710e40ad-a295-4394-9418-58f2309da018</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80b4da2c-4113-4cdc-aed9-5ee1995ae839</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0d59d79-c2b8-4c13-9954-cfc88c10e9b8</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>~</value>
+      <footprint>Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP3.5x3.5mm</footprint>
+      <datasheet>https://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP3.5x3.5mm</field>
+        <field name="Datasheet">https://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="trackpad" part="IQS550" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trackpad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ac5eafc-55f0-4fbd-b0a9-175a4ca6e81f</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="trackpad" part="IQS550">
+      <docs>https://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">~</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm</field>
+        <field name="Datasheet">https://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Tx14" type="passive"/>
+        <pin num="2" name="PGM" type="passive"/>
+        <pin num="3" name="SW_IN" type="passive"/>
+        <pin num="4" name="n/c" type="passive"/>
+        <pin num="5" name="SDA" type="passive"/>
+        <pin num="6" name="SCL" type="passive"/>
+        <pin num="7" name="VDDHI" type="passive"/>
+        <pin num="8" name="VSS" type="passive"/>
+        <pin num="9" name="VREG" type="passive"/>
+        <pin num="10" name="NRST" type="passive"/>
+        <pin num="11" name="RDY" type="passive"/>
+        <pin num="12" name="n/c" type="passive"/>
+        <pin num="13" name="Rx0A" type="passive"/>
+        <pin num="14" name="Rx0B" type="passive"/>
+        <pin num="15" name="Rx1A" type="passive"/>
+        <pin num="16" name="Rx1B" type="passive"/>
+        <pin num="17" name="Rx2A" type="passive"/>
+        <pin num="18" name="Rx2B" type="passive"/>
+        <pin num="19" name="Rx3A" type="passive"/>
+        <pin num="20" name="Rx3B" type="passive"/>
+        <pin num="21" name="Rx4A" type="passive"/>
+        <pin num="22" name="Rx4B" type="passive"/>
+        <pin num="23" name="Rx5A" type="passive"/>
+        <pin num="24" name="Rx5B" type="passive"/>
+        <pin num="25" name="Rx6A" type="passive"/>
+        <pin num="26" name="Rx6B" type="passive"/>
+        <pin num="27" name="Rx7A" type="passive"/>
+        <pin num="28" name="Rx7B" type="passive"/>
+        <pin num="29" name="Rx8A" type="passive"/>
+        <pin num="30" name="Rx8B" type="passive"/>
+        <pin num="31" name="Rx9A" type="passive"/>
+        <pin num="32" name="Rx9B" type="passive"/>
+        <pin num="33" name="Tx0" type="passive"/>
+        <pin num="34" name="Tx1" type="passive"/>
+        <pin num="35" name="Tx2" type="passive"/>
+        <pin num="36" name="Tx3" type="passive"/>
+        <pin num="37" name="VSSIO" type="passive"/>
+        <pin num="38" name="VDDIO" type="passive"/>
+        <pin num="39" name="Tx4" type="passive"/>
+        <pin num="40" name="Tx5" type="passive"/>
+        <pin num="41" name="Tx6" type="passive"/>
+        <pin num="42" name="Tx7" type="passive"/>
+        <pin num="43" name="Tx8" type="passive"/>
+        <pin num="44" name="Tx9" type="passive"/>
+        <pin num="45" name="Tx10" type="passive"/>
+        <pin num="46" name="Tx11" type="passive"/>
+        <pin num="47" name="Tx12" type="passive"/>
+        <pin num="48" name="Tx13" type="passive"/>
+        <pin num="49" name="TAB" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="+3V3" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="VDDIO" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="VDDHI" pintype="passive"/>
+    </net>
+    <net code="2" name="/NRST" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="NRST" pintype="passive"/>
+    </net>
+    <net code="3" name="/PGM" class="Default">
+      <node ref="U1" pin="2" pinfunction="PGM" pintype="passive"/>
+    </net>
+    <net code="4" name="/RDY" class="Default">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="RDY" pintype="passive"/>
+    </net>
+    <net code="5" name="/RX0" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/RX1" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/RX2" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/RX3" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/RX4" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/RX5" class="Default">
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/RX6" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/RX7" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/RX8" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="/RX9" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="/SCL" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="SCL" pintype="passive"/>
+    </net>
+    <net code="16" name="/SDA" class="Default">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="SDA" pintype="passive"/>
+    </net>
+    <net code="17" name="/SW_IN" class="Default">
+      <node ref="U1" pin="3" pinfunction="SW_IN" pintype="passive"/>
+    </net>
+    <net code="18" name="/TX0" class="Default">
+      <node ref="U1" pin="33" pinfunction="Tx0" pintype="passive"/>
+    </net>
+    <net code="19" name="/TX1" class="Default">
+      <node ref="U1" pin="34" pinfunction="Tx1" pintype="passive"/>
+    </net>
+    <net code="20" name="/TX2" class="Default">
+      <node ref="U1" pin="35" pinfunction="Tx2" pintype="passive"/>
+    </net>
+    <net code="21" name="/TX3" class="Default">
+      <node ref="U1" pin="36" pinfunction="Tx3" pintype="passive"/>
+    </net>
+    <net code="22" name="/TX4" class="Default">
+      <node ref="U1" pin="39" pinfunction="Tx4" pintype="passive"/>
+    </net>
+    <net code="23" name="/TX5" class="Default">
+      <node ref="U1" pin="40" pinfunction="Tx5" pintype="passive"/>
+    </net>
+    <net code="24" name="/TX6" class="Default">
+      <node ref="U1" pin="41" pinfunction="Tx6" pintype="passive"/>
+    </net>
+    <net code="25" name="/TX7" class="Default">
+      <node ref="U1" pin="42" pinfunction="Tx7" pintype="passive"/>
+    </net>
+    <net code="26" name="/TX8" class="Default">
+      <node ref="U1" pin="43" pinfunction="Tx8" pintype="passive"/>
+    </net>
+    <net code="27" name="/TX9" class="Default">
+      <node ref="U1" pin="44" pinfunction="Tx9" pintype="passive"/>
+    </net>
+    <net code="28" name="/TX10" class="Default">
+      <node ref="U1" pin="45" pinfunction="Tx10" pintype="passive"/>
+    </net>
+    <net code="29" name="/TX11" class="Default">
+      <node ref="U1" pin="46" pinfunction="Tx11" pintype="passive"/>
+    </net>
+    <net code="30" name="/TX12" class="Default">
+      <node ref="U1" pin="47" pinfunction="Tx12" pintype="passive"/>
+    </net>
+    <net code="31" name="/TX13" class="Default">
+      <node ref="U1" pin="48" pinfunction="Tx13" pintype="passive"/>
+    </net>
+    <net code="32" name="/TX14" class="Default">
+      <node ref="U1" pin="1" pinfunction="Tx14" pintype="passive"/>
+    </net>
+    <net code="33" name="/VREG" class="Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="VREG" pintype="passive"/>
+    </net>
+    <net code="34" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="VSSIO" pintype="passive"/>
+      <node ref="U1" pin="49" pinfunction="TAB" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VSS" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(U1-Rx0A)" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="Rx0A" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(U1-Rx1A)" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="Rx1A" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(U1-Rx2A)" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="Rx2A" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(U1-Rx3A)" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="Rx3A" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(U1-Rx4A)" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="Rx4A" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(U1-Rx5A)" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="Rx5A" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(U1-Rx6A)" class="Default">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="Rx6A" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(U1-Rx7A)" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="Rx7A" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(U1-Rx8A)" class="Default">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="Rx8A" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(U1-Rx9A)" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="Rx9A" pintype="passive"/>
+    </net>
+    <net code="45" name="unconnected-(U1-Rx0B-Pad14)" class="Default">
+      <node ref="U1" pin="14" pinfunction="Rx0B" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-Rx1B-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="Rx1B" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-Rx2B-Pad18)" class="Default">
+      <node ref="U1" pin="18" pinfunction="Rx2B" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-Rx3B-Pad20)" class="Default">
+      <node ref="U1" pin="20" pinfunction="Rx3B" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-Rx4B-Pad22)" class="Default">
+      <node ref="U1" pin="22" pinfunction="Rx4B" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-Rx5B-Pad24)" class="Default">
+      <node ref="U1" pin="24" pinfunction="Rx5B" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-Rx6B-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="Rx6B" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-Rx7B-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="Rx7B" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-Rx8B-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="Rx8B" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-Rx9B-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="Rx9B" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-n/c-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="n/c" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-n/c-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="n/c" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
