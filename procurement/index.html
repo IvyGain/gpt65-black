@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GRT65 Black Edition | 発注と制作</title>
+<style>
+:root{color-scheme:dark;--bg:#121412;--panel:#1b1e1a;--line:#343a32;--text:#f2f4eb;--muted:#aeb8ac;--accent:#d9ef93;--amber:#f3c785}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 "Noto Sans",system-ui,sans-serif}
+main{max-width:1120px;margin:auto;padding:32px 24px 80px}nav{display:flex;gap:24px;border-bottom:1px solid var(--line);padding-bottom:16px}nav a:first-child{margin-right:auto;font-weight:800}a{color:var(--accent);text-underline-offset:4px}
+header{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;padding:42px 0}h1{font-size:clamp(28px,5vw,52px);line-height:1.18;margin:10px 0 16px;letter-spacing:-.04em}h2{font-size:26px;margin:0 0 12px}h3{line-height:1.35;margin:0 0 7px}.muted,small{color:var(--muted)}header img{width:100%;display:block;border-radius:14px}figure{margin:0}figcaption{margin-top:6px;color:var(--muted);font-size:12px}
+section{margin:25px 0 44px;scroll-margin-top:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.toolbar input{flex:1;min-width:190px}button,input[type=search]{font:inherit;color:inherit;border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:8px 13px}button{cursor:pointer}button[aria-pressed=true]{background:var(--accent);color:var(--bg);border-color:var(--accent)}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:9px 0}.item{display:grid;grid-template-columns:minmax(170px,.85fr) minmax(220px,1.5fr) minmax(140px,.68fr);gap:18px;align-items:start}.item p{margin:4px 0}.tag{display:inline-block;border:1px solid var(--line);border-radius:100px;padding:1px 8px;font-size:12px;color:var(--muted)}.tag.buy{color:var(--accent)}.tag.hold{color:var(--amber)}.check{display:flex;align-items:center;gap:7px;font-size:13px;margin-top:9px;width:fit-content}.check input{accent-color:var(--accent);width:16px;height:16px}article.done h3{color:var(--muted)}.links a{display:block;width:fit-content;margin-bottom:5px}.road{display:grid;grid-template-columns:1fr 1fr;gap:12px}.road .card{margin:0}.road strong{color:var(--accent);font-size:13px}details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;color:var(--accent)}footer{color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media(max-width:710px){main{padding:17px 14px 50px}header,.road,.item{grid-template-columns:1fr;gap:11px}header{padding:24px 0}nav{gap:12px;font-size:13px}.links a{display:inline-block;margin-right:12px}}
+</style>
+</head>
+<body><main>
+<nav aria-label="ページ内"><a href="#">GRT65 BLACK EDITION</a><a href="#orders">発注</a><a href="#roadmap">ロードマップ</a></nav>
+<header><div><h1>発注チェックと<br>完成までの流れ</h1><p>85 × 76 mm。手前にトラックパッド、奥に3キーと端子。キー込みの仮寸法は13.9 mmで、12 mmは検証中の目標です。</p><a href="../docs/fit-and-part-selection.md">寸法検証と部品候補</a></div><figure><img src="../design/enclosure/reference-in-use.png" alt="操作者側から見た筐体案。手前にトラックパッド、奥に3キー"><figcaption>採用した配置のCADイメージ</figcaption></figure></header>
+<section id="orders">
+<h2>発注チェックリスト</h2>
+<p class="muted">「今買える」は未所持なら購入できる汎用品です。販売店リンクは検索で開きます。最新の在庫・価格・送料は注文画面で確認してください。候補型番は「設計待ち」に表示します。</p>
+<div class="toolbar" role="group" aria-label="品目を絞り込む">
+<button type="button" data-filter="all" aria-pressed="true">すべて</button><button type="button" data-filter="buy" aria-pressed="false">今買える</button><button type="button" data-filter="check" aria-pressed="false">現物確認</button><button type="button" data-filter="hold" aria-pressed="false">設計待ち</button><button type="button" data-filter="owned" aria-pressed="false">手配済み</button>
+<input id="search" type="search" aria-label="品名や型番で検索" placeholder="品名・型番で検索">
+</div>
+<p id="progress" class="muted" aria-live="polite"></p><div id="items"></div><noscript>一覧の表示とチェックの保存にはJavaScriptが必要です。</noscript>
+</section>
+<section id="roadmap">
+<h2>完成までのロードマップ</h2>
+<div class="road">
+<article class="card"><strong>01｜最初に進める</strong><h3>キット確認と採寸</h3><p>同梱品を確認。キーの静止・底打ち高さ、裏面の突出、FFCの接点面、USB-C位置を測る。</p><a href="../docs/stackup.md">採寸表</a></article>
+<article class="card"><strong>02｜通電前の判定</strong><h3>配線とIQS550の確認</h3><p>公式ネットリストは照合済み。無通電でFFCの1番・全ピン導通・短絡を確認し、給電と論理条件を確定した後に電流制限付きでI²Cを検証。</p><a href="../docs/issue-1-electrical-audit.md">検証条件</a></article>
+<article class="card"><strong>03｜試作</strong><h3>Macで基本操作を確認</h3><p>3キー、ポインター、スクロールをBLE HIDで試す。ネイティブのマルチタッチとショートカットによる操作を個別に確認する。</p></article>
+<article class="card"><strong>04｜部品型番を確定</strong><h3>電源・RGB・筐体を詰める</h3><p>消費電流から電池容量を決め、保護と充電条件を照合。端子とスイッチの高さ、アンテナ、FFC、導光部品をCADで確認。</p><a href="../design/enclosure/grt65.scad">外装CAD</a></article>
+<article class="card"><strong>05｜製造前</strong><h3>基板配線と樹脂筐体の試作</h3><p>KiCadで配線、ERC・DRCを実施。3D試作でキーの動き、挿抜、熱、無線を確認し、STEP・寸法図・Gerber・実装BOMを確定する。</p><a href="../design/pcb/key-carrier.kicad_pro">3キー基板</a></article>
+<article class="card"><strong>06｜完成・受入確認</strong><h3>仕上げとMacアプリ</h3><p>BLE設定仕様に合わせて、キー割り当て・RGB・電池表示を実装。試作品の受入後に筐体と基板を手配し、完成品で充電と再接続を確認する。</p></article>
+</div>
+</section>
+<footer><a href="../bom/parts.csv">BOM CSV</a> · <a href="../docs/build-and-purchase-checklist.md">制作物の全一覧</a> · <a href="../docs/design-a0.md">設計資料</a></footer>
+</main>
+<script>
+const mono = q => 'https://www.monotaro.com/s/?q=' + encodeURIComponent(q);
+const digi = q => 'https://www.digikey.jp/ja/products/result?keywords=' + encodeURIComponent(q);
+const aki = q => 'https://akizukidenshi.com/catalog/goods/search.aspx?keyword=' + encodeURIComponent(q);
+const yup = q => 'https://shop.yushakobo.jp/search?q=' + encodeURIComponent(q);
+const entries = [
+['caliper','buy','デジタルノギス','1本','150 mmレンジ、0.01 mm表示','精度が仕様表に記載されたもの。ケースと部品の実測用。',[['モノタロウで検索',mono('デジタルノギス 150mm 0.01mm')]]],
+['meter','buy','デジタルマルチメーター','1台','直流電圧・抵抗・導通ブザー','プローブ付属を確認。FFCのパッドの導通には細いプローブかブレークアウトを使う。',[['モノタロウで検索',mono('デジタルマルチメータ 導通ブザー')]]],
+['usb-cable','buy','データ通信対応USBケーブル','1本','XIAO側USB-C。Mac側の端子に合わせる','充電専用品を避け、USBデータ通信に対応するもの。',[['モノタロウで検索',mono('USB Type-C データ転送 ケーブル')]]],
+['supply','buy','電流制限付き直流安定化電源','1台','3.3 Vを設定可能。定電流（CC）モード','低電流域の設定・表示仕様と付属リードを確認。電流制限値は負荷の仕様を確認して決める。',[['モノタロウで検索',mono('直流安定化電源 定電圧 定電流')]]],
+['leads','buy','絶縁テストリード','1式','電源・テスター端子の形状に合わせる','付属品があれば追加不要。FFC端子には直接クリップをかけない。',[['モノタロウで検索',mono('絶縁 テストリード ミノムシ')]]],
+['breakout','check','FFCブレークアウト','1枚','0.50 mmピッチ、6接点','接点面と対応ケーブル厚、独立した6端子、ピン1表示を確認。0.50 mmでも6接点以外や逆の接点面は選ばない。',[['秋月電子で検索',aki('FFC 0.5mm 6 変換')],['ピンマップ','../docs/pin-map.md']]],
+['ffc','check','トラックパッド用FFC','1本','0.50 mmピッチ、6接点。長さと両端の接点面は現物待ち','写真に同梱候補あり。追加は接点面と経路を確認して不足時のみ。',[['秋月電子で検索',aki('FFC 0.5mm 6')]]],
+['overlay','check','マットアクリル操作面','1枚','厚さ2 mm推奨、センサー65 × 49 mm','操作面の切り出し寸法と固定方法は現物合わせ。キット同梱を先に確認。',[['モノタロウで検索',mono('マット アクリル板 黒 2mm')],['公式資料','https://github.com/geek-rabb1t/GR-Trackpad65#readme']]],
+['kit-parts','check','ピンヘッダー・ねじ・スペーサー・脚・RP2040-Zero','不足分','規格・長さはキット現物で確認','純正キット確認用。製品用の締結部品は筐体図面確定後に選ぶ。',[]],
+['cell','hold','保護付き1セルLiPo・絶縁材・保持材','1組','予約枠34 × 22 × 5.5 mm。型番未確定','枠は保護回路・包装・絶縁・膨張余裕込み。容量、許容充電電流、極性、リードの向きを照合後に選定。',[]],
+['power','hold','充電・電源制御・保護部品','回路確定後','充電電流、入力定格、電源経路は未確定','セル仕様とUSB接続時の動作から選定。試作XIAOと量産基板で構成が変わる可能性あり。',[]],
+['switch','hold','電源スイッチ','1個','候補 C&K JS102011SAQN。枠12 × 7 × 2.5 mm','ノブ、端子、はんだを含む高さ、定格とストローク未確認。候補のまま。',[['DigiKeyで型番検索',digi('JS102011SAQN')],['メーカー資料','https://www.ckswitches.com/media/1422/js.pdf']]],
+['port','hold','USB-C引き出し部品','1式','候補 GCT USB4105-GF-A。枠12 × 8 × 2.5 mm','本体8.94 × 7.35 mm、KiCadの配置余白10.64 × 8.94 mm。奥行が現枠を0.94 mm超過。別部品か配置変更が必要。',[['DigiKeyで候補型番検索',digi('USB4105-GF-A')],['メーカー図面','https://gct.co/files/drawings/usb4105.pdf']]],
+['led','hold','アドレス指定RGB・導光部品','各3個','候補 SK6812 EC15。本体1.5 × 1.5 mm、予約領域は各4 × 4 mm','入力電圧・閾値・電流と、拡散部品の高さを確認。LEDは光源が直接見えない配置にする。',[['DigiKeyで候補検索',digi('SK6812 EC15')]]],
+['harness','hold','キー基板4線ハーネス','1式','左キー・中央キー・右キー・GND','長さ、端子、こすれと取付高さは筐体と配置確定後に選ぶ。',[['キー回路図','../design/pcb/key-carrier.kicad_sch']]],
+['fabrication','hold','カスタムPCB・筐体・RF窓・締結部品','図面確定後','85 × 76 mmの外観。最終公差と仕上げは未確定','PCBは配線とDRC、筐体は実寸・組付け・樹脂試作の後に製造データを確定。',[['設計資料','../docs/design-a0.md']]],
+['sunset','owned','Kailh Choc V1 Sunset','3個注文済み','Choc V1、Sunset tactile','3キー分。買い足す場合もV2・リニア・クリッキーと取り違えない。',[['遊舎工房で検索',yup('Sunset')]]],
+['caps','owned','MBK Choc V1 黒無刻印','10個注文済み','1U。3個使用','Choc V1互換の軸形状。',[['遊舎工房で検索',yup('MBK')]]],
+['xiao','owned','Seeed Studio XIAO nRF52840','1枚注文済み','標準版。基板外形約21 × 17.5 mm','検証ファームの対象は標準版。Sense、Plus、別MCUと取り違えない。',[['Seeedのピン表','https://wiki.seeedstudio.com/XIAO_BLE/']]],
+['tools','owned','GRT65-EXP Kit・引き抜き工具・はんだセット','各1','キットと工具は既存分を確認','キットは未組立、引き抜き工具は注文済み。',[]]
+];
+const label = {buy:'今買える',check:'現物確認',hold:'設計待ち',owned:'手配済み'};
+const controls = document.querySelectorAll('[data-filter]');
+const search = document.querySelector('#search');
+const list = document.querySelector('#items');
+const progress = document.querySelector('#progress');
+let checked = new Set();
+let filter = 'all';
+const storageKey = 'grt65.procurement.checked.v1';
+try { checked = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); } catch {}
+function el(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+function updateProgress(visible) {
+  const count = entries.filter(([id]) => checked.has(id)).length;
+  progress.textContent = `表示 ${visible} / ${entries.length}件 · 確認済み ${count}件（このブラウザに保存）`;
+}
+function render() {
+  const query = search.value.trim().toLowerCase();
+  const visible = entries.filter(row => (filter === 'all' || filter === row[1]) && row.slice(2,6).join(' ').toLowerCase().includes(query));
+  list.replaceChildren();
+  for (const [id,status,title,qty,spec,note,links] of visible) {
+    const card = el('article', '', 'card item');
+    const heading = el('div');
+    heading.append(el('span', label[status], 'tag '+status), el('h3', title), el('small', qty));
+    const box = el('input');
+    box.type = 'checkbox';
+    box.checked = checked.has(id);
+    const check = el('label', '', 'check');
+    check.append(box, document.createTextNode('確認済み'));
+    heading.append(check);
+    box.setAttribute('aria-label', title+'を確認済みにする');
+    card.classList.toggle('done', box.checked);
+    box.addEventListener('change', () => {
+      if (box.checked) checked.add(id); else checked.delete(id);
+      try { localStorage.setItem(storageKey, JSON.stringify([...checked])); } catch {}
+      card.classList.toggle('done', box.checked);
+      updateProgress(visible.length);
+    });
+    const detail = el('div');
+    detail.append(el('strong', spec), el('p', note, 'muted'));
+    const sources = el('div', '', 'links');
+    for (const [name,url] of links) {
+      const link = el('a', name);
+      link.href = url;
+      if (url.startsWith('https:')) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+      sources.append(link);
+    }
+    card.append(heading,detail,sources);
+    list.append(card);
+  }
+  if (!visible.length) list.append(el('p','該当する品目がありません。','card'));
+  updateProgress(visible.length);
+}
+for (const button of controls) button.addEventListener('click', () => {
+  filter = button.dataset.filter;
+  for (const control of controls) control.setAttribute('aria-pressed', String(control === button));
+  render();
+});
+search.addEventListener('input', render);
+render();
+</script>
+</body>
+</html>

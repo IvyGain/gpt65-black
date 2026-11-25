@@ -1,0 +1,20 @@
+part,quantity,status,notes
+Kailh Choc V1 Sunset,3,ordered,No spare
+MBK Choc V1 black 1U keycaps,10,ordered,3 required
+Seeed XIAO nRF52840,1,ordered,BLE prototype
+2-in-1 key puller,1,ordered,Tool
+GRT65-EXP Kit,1,on_hand,Unassembled
+Soldering kit,1,on_hand,Recorded in the uploaded conversation handoff
+Protected 1S LiPo,1,unselected,Size and charging constraints unknown
+Power switch,1,unselected,Electrical architecture pending
+Addressable RGB LEDs,3,unselected,Voltage and placement pending
+Custom PCB,1,unselected,After validation
+Custom enclosure,1,unselected,After measured CAD stackup
+0.5 mm pitch 6-contact FFC breakout,1,candidate,"Bench adapter; verify contact side and pin 1 against the actual module"
+6-contact FFC,1,check_kit,"Check kit contents and cable end orientation before ordering"
+2 mm matte acrylic touch overlay,1,check_kit,"Upstream recommendation; confirm kit contents and fit before ordering"
+Four-wire key-carrier harness,1,candidate,"Select after measuring key PCB underside clearance"
+Low-profile USB-C interconnect,1,candidate,"For the 85 x 76 mm layout; architecture and mechanical fit pending"
+RGB diffuser or light guide,3,candidate,"Select after LED and enclosure geometry are confirmed"
+Battery insulation and retention hardware,,candidate,"Select after cell package and permitted compression are confirmed"
+Enclosure fasteners and feet,,candidate,"Select after case retention and material are confirmed"

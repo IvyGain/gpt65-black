@@ -1,0 +1,434 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "1dd08f08-1f29-45f7-b5a1-6c92a27904cc") (paper "A4")
+(lib_symbols
+	(symbol "Switch:SW_Push"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 1.27 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 0 -1.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SW_Push_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_Generic:Conn_01x04"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x04_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+
+  (symbol (lib_id "Switch:SW_Push") (at 76.2 43.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "1b37becc-50c9-487d-ba4d-be6281d1ce06")
+    (property "Reference" "SW1" (at 76.2 38.1 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SW_Push" (at 76.2 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "GRT65:SW_Kailh_Choc_V1" (at 76.2 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "dfbab1ca-ffc6-46f8-9d42-7e7e5aa9e4a2"))(pin "2" (uuid "b4893223-9201-4b21-b674-ce5f83698fc3"))
+    (instances (project "key-carrier" (path "/1dd08f08-1f29-45f7-b5a1-6c92a27904cc" (reference "SW1") (unit 1))))
+  )
+
+  (wire (pts (xy 71.12 43.18) (xy 60.96 43.18)) (stroke (width 0) (type default)) (uuid "a82d0f4b-1eef-4589-979d-db40e4619f85"))
+  (label "KEY_L" (at 60.96 43.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e85149c-8c8d-4819-ad44-58cb8cf2fb4e"))
+
+
+  (wire (pts (xy 81.28 43.18) (xy 91.44 43.18)) (stroke (width 0) (type default)) (uuid "db4daf91-7190-4e54-80b6-6f729b7a72db"))
+  (label "GND" (at 91.44 43.18 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b2d29e68-cb1b-411d-af52-56d792c90c9b"))
+
+
+  (symbol (lib_id "Switch:SW_Push") (at 76.2 55.879999999999995 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "00155c88-1c2d-4512-a9e1-dc52bcd6f450")
+    (property "Reference" "SW2" (at 76.2 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SW_Push" (at 76.2 53.339999999999996 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "GRT65:SW_Kailh_Choc_V1" (at 76.2 55.879999999999995 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ade4eaa4-a721-4a82-b76b-7752c30b9e63"))(pin "2" (uuid "4b1ca3f7-df85-4c9e-b533-37c780d467e0"))
+    (instances (project "key-carrier" (path "/1dd08f08-1f29-45f7-b5a1-6c92a27904cc" (reference "SW2") (unit 1))))
+  )
+
+  (wire (pts (xy 71.12 55.879999999999995) (xy 60.96 55.879999999999995)) (stroke (width 0) (type default)) (uuid "f9d0c700-70ae-4834-b913-e11522f973d3"))
+  (label "KEY_M" (at 60.96 55.879999999999995 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b205ec2d-71ed-40cb-9bc7-f4ebc95233c2"))
+
+
+  (wire (pts (xy 81.28 55.879999999999995) (xy 91.44 55.879999999999995)) (stroke (width 0) (type default)) (uuid "a8bc3eb2-e4d0-443d-904a-d4985ee9c8b7"))
+  (label "GND" (at 91.44 55.879999999999995 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "051de040-bbeb-4a1a-9e99-74b237fe4352"))
+
+
+  (symbol (lib_id "Switch:SW_Push") (at 76.2 68.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "d106f800-7ae4-4091-9e84-8872217687a0")
+    (property "Reference" "SW3" (at 76.2 63.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SW_Push" (at 76.2 66.03999999999999 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "GRT65:SW_Kailh_Choc_V1" (at 76.2 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "76a6e284-4e5a-471d-8d89-edc6db2a5429"))(pin "2" (uuid "de315044-a342-478b-b3ea-c89a2d8ec36f"))
+    (instances (project "key-carrier" (path "/1dd08f08-1f29-45f7-b5a1-6c92a27904cc" (reference "SW3") (unit 1))))
+  )
+
+  (wire (pts (xy 71.12 68.58) (xy 60.96 68.58)) (stroke (width 0) (type default)) (uuid "e8453663-006f-479f-85be-e8503b6aada5"))
+  (label "KEY_R" (at 60.96 68.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b37d6226-75ba-4072-a45f-61f65a849cf0"))
+
+
+  (wire (pts (xy 81.28 68.58) (xy 91.44 68.58)) (stroke (width 0) (type default)) (uuid "593ecd9b-6e0c-496a-b3a7-56195e1f4e73"))
+  (label "GND" (at 91.44 68.58 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7ce89c99-4dc4-4aa5-a983-a59633f7403d"))
+
+
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 139.7 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "224d3153-571a-417e-a1db-bc19408aed5f")
+    (property "Reference" "J1" (at 139.7 50.800000000000004 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Conn_01x04" (at 139.7 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 139.7 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "e064e633-92f4-4980-ad5e-1b53be3f9230"))(pin "2" (uuid "9aa3ca94-15ba-4010-a752-129b79e06c39"))(pin "3" (uuid "74f98711-051c-4e01-8055-f30b7226005e"))(pin "4" (uuid "6cfb7bb9-2178-456c-a5a5-6733469c25b3"))
+    (instances (project "key-carrier" (path "/1dd08f08-1f29-45f7-b5a1-6c92a27904cc" (reference "J1") (unit 1))))
+  )
+
+  (wire (pts (xy 134.62 53.34) (xy 119.38 53.34)) (stroke (width 0) (type default)) (uuid "2818d191-75be-4ca9-93eb-e2a4596009e2"))
+  (label "KEY_L" (at 119.38 53.34 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "819d0e16-9f5e-4a13-8446-574a6a40362b"))
+
+
+  (wire (pts (xy 134.62 55.88) (xy 119.38 55.88)) (stroke (width 0) (type default)) (uuid "06eacd98-cc48-428f-9f73-f5c12b7ba352"))
+  (label "KEY_M" (at 119.38 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8fb4922f-07d0-45be-be17-52cdc7fa4eff"))
+
+
+  (wire (pts (xy 134.62 58.42) (xy 119.38 58.42)) (stroke (width 0) (type default)) (uuid "3e7f1bd2-a47c-44a3-9316-7473a7365d2b"))
+  (label "KEY_R" (at 119.38 58.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "45bf3497-281d-485a-be37-77a63cfe1f31"))
+
+
+  (wire (pts (xy 134.62 60.96) (xy 119.38 60.96)) (stroke (width 0) (type default)) (uuid "7cf5181c-cf82-4c2c-9614-8fb41f652d94"))
+  (label "GND" (at 119.38 60.96 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "54984ab8-4756-4362-96ec-62827a108930"))
+
+(text "A0 - three passive switches / assembly study" (at 100.33 30.48 0) (effects (font (size 1.27 1.27))) (uuid "da861892-0f07-4349-9d7d-a4362c0b437e"))
+(text "J1: left / middle / right / common GND. Host input pull-ups." (at 100.33 91.44 0) (effects (font (size 1.27 1.27))) (uuid "6e5600ab-33f1-4da4-8b06-138c4fa75030"))
+(sheet_instances (path "/" (page "1")))
+(embedded_fonts no)
+)
